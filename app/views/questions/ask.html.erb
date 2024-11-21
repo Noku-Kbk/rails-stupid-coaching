@@ -1,0 +1,8 @@
+<h1>Stupid Coaching</h1>
+<h1>Ask the Coach</h1>
+
+<%= form_with url: '/answer', method: 'get', local: true do %>
+  <label for="question">What is your question?</label>
+  <%= text_field_tag :question %>
+  <%= submit_tag 'Ask!' %>
+<% end %>
